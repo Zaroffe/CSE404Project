@@ -1,4 +1,5 @@
-#this should all work, unless i broke it last night and completely forgot about it.
+#this should all work, unless I broke it last night and completely forgot about it.
+#making it into a git repository may have screwed with the packages as well.
 
 import cv2
 import numpy as np
