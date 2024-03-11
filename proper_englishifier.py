@@ -1,0 +1,1 @@
+#make a structure to alter broken/partial english into proper english
