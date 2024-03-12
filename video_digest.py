@@ -50,36 +50,46 @@ def extract_hand_size(skin_mask):
     return hand_size
 
 
-# Function to load and preprocess a video, extract frames, and predict gestures
 def process_video(video_path, model):
     cap = cv2.VideoCapture(video_path)
     frames = []
 
     while cap.isOpened():
         ret, frame = cap.read()
-
         if not ret:
             break
 
-        # Preprocess the frame (resize, normalize, etc.)
-        preprocessed_frame = preprocess_frame(frame)  # You need to implement this function
+        preprocessed_frame = preprocess_frame(frame)
 
-        # Append the preprocessed frame to the frames list
+        # Ensure each frame is correctly preprocessed
+        if preprocessed_frame is None or preprocessed_frame.size == 0:
+            print("Preprocessing failed or returned empty frame.")
+            continue
+
         frames.append(preprocessed_frame)
 
     cap.release()
 
-    # Convert frames list to a NumPy array
     frames = np.array(frames)
 
-    # Make predictions using the trained model
-    predictions = model.predict(frames)
+    # Check if the frames array is not empty
+    if frames.size == 0:
+        print("No frames to predict on.")
+        return None
 
-    # Process predictions (e.g., find the most common prediction)
-    result = postprocess_predictions(predictions)  # You need to implement this function
+    # Log the shape to ensure it's correct
+    print("Frames shape:", frames.shape)
 
+    try:
+        predictions = model.predict(frames)
+    except ValueError as e:
+        print(f"Error during model prediction: {e}")
+        # Optionally, add more diagnostic information here
+        return None
+
+    # Postprocess predictions if necessary
+    result = postprocess_predictions(predictions)
     return result
-
 # Function to preprocess a frame (resize, normalize, etc.)
 def preprocess_frame(frame):
     # Implement frame preprocessing steps here

@@ -1,5 +1,6 @@
 from transformers import pipeline
 
+
 def correct_broken_english(text):
     # Initialize a pipeline for text generation, using a pre-trained model.
     # This example uses "bert-base-uncased" for demonstration, but for a real application,
@@ -16,6 +17,7 @@ def correct_broken_english(text):
         return ""
 
     return corrected_text
+
 
 # Example usage
 broken_english = "me time home"
