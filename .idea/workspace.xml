@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb33d44c-f098-48ba-b4b6-b7576618a61e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bb33d44c-f098-48ba-b4b6-b7576618a61e" name="Changes" comment="fixed some packages, maybe not all of them though :/">
+      <change beforePath="$PROJECT_DIR$/CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_digest.py" beforeDir="false" afterPath="$PROJECT_DIR$/video_digest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proper_englishifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/proper_englishifier.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.CNN.executor": "Run",
+    "Python.proper_englishifier.executor": "Run",
     "Python.video_digest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -56,11 +57,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710120905696</updated>
-      <workItem from="1710120909992" duration="712000" />
+      <workItem from="1710120909992" duration="5137000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed some packages, maybe not all of them though :/">
+      <option name="closed" value="true" />
+      <created>1710121653803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710121653803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed some packages, maybe not all of them though :/" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some packages, maybe not all of them though :/" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject$CNN.coverage" NAME="CNN Coverage Results" MODIFIED="1710121531041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$video_digest.coverage" NAME="video_digest Coverage Results" MODIFIED="1710121613640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$proper_englishifier.coverage" NAME="proper_englishifier Coverage Results" MODIFIED="1710265667865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

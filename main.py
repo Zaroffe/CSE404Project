@@ -1,4 +1,4 @@
-#this is where i will assemble all the functions
+#this is where we will assemble all the functions
 #the order should be: break up video, create features, train CNN, run CNN, convert broken english to proper english
 
 import CNN

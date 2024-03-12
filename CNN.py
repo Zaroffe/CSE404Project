@@ -1,3 +1,5 @@
+#this likely needs quite a bit of work to work how we hope
+
 from matplotlib import pyplot as plt
 
 import video_digest
