@@ -34,6 +34,19 @@ train_new = True
 x = np.load("X.npy")
 y = np.load("Y.npy")
 
+
+# Count instances per class
+unique, counts = np.unique(y, return_counts=True)
+
+plt.figure(figsize=(10, 6))
+plt.bar(unique, counts)
+plt.xticks(unique, rotation=65)
+plt.xlabel('Classes')
+plt.ylabel('Number of Images')
+plt.title('Number of Images per Class')
+plt.show()
+
+
 # shuffle and split the data
 split_number = int(split_proportion * x.shape[0])
 
